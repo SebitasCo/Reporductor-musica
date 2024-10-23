@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <title>Reproductor</title>
+</head>
+<body>
+  <div class="container-player">
+    <h1>Reproductor</h1>        
+    <div class="container-album">
+        <div class="container-album">  
+            <img src="assets/img/traqueto.jpg" alt="album" class="player__img" id="album-img">  
+            <h2 class="player__artist" id="song-artist">iZaak, Clarent</h2>  
+            <h3 class="player__song" id="song-title">TRAQUETO</h3>  
+          </div>
+    </div>    
+    <div class="controls">
+      <audio class="player__audio" controls id="audio">
+        <source src="assets/audio/iZaak, Clarent - TRAQUETO (Official Video).mp3" type="audio/mpeg">
+
+
+
+
+      </audio>
+      <div class="player_controls">
+        <i class='bx bx-skip-previous' id="previous"></i> 
+        <i class='bx bx-rewind' id="rewind"></i>        
+        <i class='bx bx-play' id="play"></i>
+        <i class='bx bx-stop' id="stop"></i> 
+        <i class='bx bx-pause' id="pause"></i>
+        <i class='bx bx-fast-forward' id="forward"></i> 
+        <i class='bx bx-skip-next' id="next"></i> 
+
+      </div>
+    </div>
+  </div>
+  <script type="module" src="app.js"></script>     
+  <script type="module" src="playlist.js"></script>                  
+</body>
+</html>
